@@ -3,6 +3,8 @@ var app = express();
 app.use(express.logger());
 
 
+app.use('/script/', express.static(__dirname + '/script'));
+app.use('/style/', express.static(__dirname + '/style'));
 app.get('/', function(request, response) {
     response.sendfile('./index.html');
 });
