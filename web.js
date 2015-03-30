@@ -16,6 +16,13 @@ app.get(/\/hbm2015$/, function(request, response) {
     response.redirect('/hbm2015/');
 });
 
+// Banco Popular claim
+//
+app.use('/bp/', express.static(__dirname + '/bp'));
+app.get(/\/bp$/, function(request, response) {
+    response.redirect('/bp/');
+});
+
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
