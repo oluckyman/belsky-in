@@ -183,7 +183,15 @@ footer p {
 footer a:hover {
   color: #61CE3C; }
 
+@font-face {
+  font-family: 'Comic Neue';
+  src: url("../fonts/ComicNeue-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/ComicNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ComicNeue-Light.woff") format("woff"), url("../fonts/ComicNeue-Light.woff2") format("woff2"), url("../fonts/ComicNeue-Light.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: 100; }
 .hbv {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   background-color: #1340A1; }
   .hbv img {
     display: block;
@@ -203,11 +211,9 @@ footer a:hover {
     background-image: linear-gradient(#BBDAFF, white); }
   .hbv h1 {
     color: #1340A1;
-    font-family: "PT Sans Narrow";
     font-size: 36px;
     text-align: center; }
   .hbv p {
-    font-family: "PT Serif";
     font-size: 24px;
     margin: 30px;
     color: #1340A1; }
@@ -216,3 +222,6 @@ footer a:hover {
     margin: 0 auto; }
   .hbv footer {
     color: black; }
+  .hbv .audio {
+    text-align: center;
+    font-size: 20px; }
