@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700|PT+Serif&subset=latin,cyrillic);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -184,7 +185,7 @@ footer a:hover {
   color: #61CE3C; }
 
 .hbv {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "PT Serif";
   background-color: #1340A1; }
   .hbv img {
     display: block;
@@ -205,7 +206,9 @@ footer a:hover {
   .hbv h1 {
     color: #1340A1;
     font-size: 36px;
-    text-align: center; }
+    text-align: center;
+    font-family: "PT Sans Narrow";
+    font-weight: bold; }
   .hbv p {
     font-size: 24px;
     margin: 30px;
@@ -217,6 +220,6 @@ footer a:hover {
     text-align: center;
     font-size: 20px; }
     .hbv .audio audio {
-      margin-top: 5px; }
+      margin-top: 12px; }
   .hbv footer {
     color: black; }
