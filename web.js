@@ -16,6 +16,13 @@ app.get(/\/hbm2015$/, function(request, response) {
     response.redirect('/hbm2015/');
 });
 
+// Happy Birthday, Vika 2015
+//
+app.use('/hbv2015/', express.static(__dirname + '/hbv2015'));
+app.get(/\/hbv2015$/, function(request, response) {
+    response.redirect('/hbv2015/');
+});
+
 // Banco Popular claim
 //
 app.use('/bp/', express.static(__dirname + '/bp'));
