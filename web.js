@@ -5,6 +5,7 @@ app.use(express.logger());
 
 app.use('/script/', express.static(__dirname + '/script'));
 app.use('/style/', express.static(__dirname + '/style'));
+app.use('/images/', express.static(__dirname + '/images'));
 app.get('/', function(request, response) {
     response.sendfile('./index.html');
 });
