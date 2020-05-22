@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "tsc",
     "watch": "tsc -w",
     "serve": "nodemon dist/server.js",
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
+    "build": "tsc && cp index.html dist/",
     "serve:prod": "node dist/server.js",
     "start:prod": "npm run build && npm run serve:prod",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
