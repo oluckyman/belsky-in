@@ -1,0 +1,4 @@
+{
+  "watch": ["dist/server.js", "index.html"],
+  "exec": "cp index.html dist/index.html; node dist/server.js"
+}

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "watch": "tsc -w",
-    "serve": "nodemon dist/server.js",
+    "serve": "nodemon",
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
     "build": "tsc && cp index.html dist/",
     "serve:prod": "node dist/server.js",
