@@ -7,18 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @font-face {
-            font-family: 'Fira Mono';
+            font-family: 'Fira Code';
             font-style: normal;
             font-weight: 400;
             font-display: swap;
-            src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v8/N0bX2SlFPv1weGeLZDtgJv7Ss9XZYQ.woff2) format('woff2');
+            src: url(https://fonts.gstatic.com/s/firacode/v9/uU9NCBsR6Z2vfE9aq3bh3dSDqFGedA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+            font-family: 'Fira Code';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/firacode/v9/uU9NCBsR6Z2vfE9aq3bh3dSDqFGedA.woff2) format('woff2');
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
         }
     </style>
     <style>
+        :root {
+            --link-color: #0d4e60;
+            --link-color-hover: #0f2227;
+            font-family: 'Fira Code', monospace;
+        }
         html {
-            /* background-image: linear-gradient(to top, #e4f7fc, #e8f8fc, #ebf8fc, #eff9fb, #f2f9fb); */
-            background-image: linear-gradient(to top, #e4fcf7, #e8fdf9, #ecfefa, #f0fefc, #f4fffd);
+            /* Use http://davidjohnstone.net/pages/lch-lab-colour-gradient-picker to generate LCH gradients */
+            background-image: linear-gradient(to top, #e4f7fc, #e8f8fc, #ebf8fc, #eff9fb, #f2f9fb);
+            font-weight: 400;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --link-color: #74583E;
+                --link-color-hover: #A8805D;
+            }
+            html {
+                background-image: linear-gradient(to top, #1b0e04, #180d02, #150c01, #120b00, #0e0a00);
+                font-weight: 300;
+            }
+            .icon {
+                opacity: 0.9;
+            }
         }
         .content {
             padding-top: 5em;
@@ -26,22 +53,18 @@
         }
         .social-list li {
             list-style-type: none;
-            font-family: 'Fira Mono', monospace;
             line-height: 2em;
         }
         .social-list li a {
             text-decoration: none;
-            color: #0d4e60;
+            color: var(--link-color);
         }
         .social-list li a:hover {
-            color: #0f2227;
+            color: var(--link-color-hover);
         }
         .social-list li a:hover span {
             text-decoration: underline;
         }
-        /* .social-list li a:visited {
-            color: #456b75;
-        } */
         .icon {
             height: 17px;
             width: 17px;
