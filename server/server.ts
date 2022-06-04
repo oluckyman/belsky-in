@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
   res.sendFile('index.html', { root: __dirname });
 })
 
+app.get('/cv.pdf', (req, res) => {
+  res.sendFile('cv.pdf', { root: __dirname });
+})
+
 const { PORT = 5000, HOST, NODE_ENV = 'production' } = process.env
 app.listen(PORT, () => {
   if (NODE_ENV === 'development') {
