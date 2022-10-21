@@ -7,8 +7,6 @@
     "serve": "nodemon",
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
     "build": "tsc && cp index.html cv.pdf dist/",
-    "serve:prod": "node dist/server.js",
-    "start:prod": "npm run build && npm run serve:prod",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "dependencies": {
