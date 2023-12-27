@@ -6,7 +6,7 @@
     "watch": "tsc -w",
     "serve": "nodemon",
     "start": "concurrently \"npm:watch\" \"npm:serve\"",
-    "build": "tsc && cp index.html cv.pdf dist/",
+    "build": "tsc && cp index.html cv.pdf favicon_io/* dist/",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "dependencies": {
